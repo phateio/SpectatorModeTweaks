@@ -45,7 +45,7 @@ bukkit {
     description = ofProp("plugin_description", "")
     main = ofProp("plugin_main_class", "")
             .replace("\${group}", "$group", true)
-            .replace("\${name}", "$name", true)
+            .replace("\${name}", ofProp("plugin_name", ""), true)
     apiVersion = "1.13"
 
     permissions {
