@@ -49,7 +49,7 @@ bukkit {
     apiVersion = "1.13"
 
     permissions {
-        "spectatormodetweaks.tpbypass" {
+        register("spectatormodetweaks.tpbypass") {
             default = OP
         }
     }
