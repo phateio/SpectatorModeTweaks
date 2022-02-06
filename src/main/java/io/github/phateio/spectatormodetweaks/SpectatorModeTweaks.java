@@ -24,7 +24,8 @@ public class SpectatorModeTweaks extends JavaPlugin implements Listener {
         FileConfiguration config = getConfig();
         config.addDefault(path_gameModeSurvivalWhenJoin, gameModeSurvivalWhenJoin);
         gameModeSurvivalWhenJoin = config.getBoolean(path_gameModeSurvivalWhenJoin);
-        saveDefaultConfig();
+        config.options().copyDefaults(true);
+        saveConfig();
     }
 
     @EventHandler
