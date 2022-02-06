@@ -12,7 +12,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class SpectatorModeTweaks extends JavaPlugin implements Listener {
 
     static final String path_gameModeSurvivalWhenJoin = "gameModeSurvivalWhenJoin";
-    private boolean gameModeSurvivalWhenJoin = false;
+    private boolean gameModeSurvivalWhenJoin = true;
 
     @Override
     public void onEnable() {
